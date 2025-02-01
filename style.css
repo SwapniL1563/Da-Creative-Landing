@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 
 *{
     margin: 0;
@@ -7,18 +7,115 @@
 }
 
 body{
-  font-family: "Outfit", serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
+    font-family: "Mona Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.container{
+    padding: 20px 7vw;
 }
 
 .navbar {
-    /* background-color: #D5FF40; */
-    background-color: rgb(161, 221, 112);
+    background-color: #D5FF40;
+    /* background-color: #a1dd70; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.navbar li{
+.navbar h1{
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.nav-links{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    list-style: none;
+}
+
+.nav-links a {
+    font-weight: 300;
+    color: black;
+    text-decoration: none;
+}
+
+
+.navbar a:hover{
+    color:#2e570f;
+}
+
+.hero{
+    background: blanchedalmond;
+}
+
+.hero-wrapper{
+    margin-top: 2%;
+   display: flex;
+}
+
+.hero-wrapper-left{
+    /* background: red; */
+}
+
+.hero-wrapper-left h1{
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-size: 8.5rem;
+    line-height: 7.5rem;
+}
+
+.hero-wrapper-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: end;
+    background-color: bisque;
+}
+
+.hero-wrapper-right .right-img{
+    background: url('/assets/abstract-marble-texture-black-white-grey-background-handmade-technique.jpg');
+    background-size: cover;
+    position: relative;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    background-color: aqua;
+    width: 45%;
+    height: 30%;
+    border-radius:80px;
+}
+
+.hero-wrapper-right .right-p{
+    text-align: end;
+    width: 60%;
     font-weight: 300;
 }
+
+.hero-wrapper-right .right-circle{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22.5%;
+    height: 85%;
+    border-radius:50%;
+    /* z-index: 10; */
+    background-color: black;
+}
+
+.right-circle .play-btn{
+    display:block;
+    width: 50%;
+    height: 50%;
+ }
+
+
+
 
