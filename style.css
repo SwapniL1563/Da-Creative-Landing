@@ -52,11 +52,14 @@ body{
 }
 
 .hero{
-    background: blanchedalmond;
+    background-color: #D5FF40;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .hero-wrapper{
-    margin-top: 2%;
+    margin-top: 1.5%;
    display: flex;
 }
 
@@ -74,19 +77,20 @@ body{
 .hero-wrapper-right{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: end;
     align-items: end;
-    background-color: bisque;
+    gap: 20px;
+    /* background-color: bisque; */
 }
 
 .hero-wrapper-right .right-img{
-    background: url('/assets/abstract-marble-texture-black-white-grey-background-handmade-technique.jpg');
+    background: url('/assets/close-up-monochrome-paint-swirls.jpg');
     background-size: cover;
     position: relative;
     display: flex;
     padding: 5px;
     align-items: center;
-    background-color: aqua;
+    /* background-color: aqua; */
     width: 45%;
     height: 30%;
     border-radius:80px;
@@ -114,6 +118,136 @@ body{
     display:block;
     width: 50%;
     height: 50%;
+ }
+
+
+
+
+ .hero-content{
+   /* width: 30vw; */
+   display: flex;
+   align-items: center;
+   gap: 2%;
+ }
+
+ .hero-content .hero-content-box{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 300px;
+    padding: 3px 3px;
+    border-radius: 13px;
+ }
+
+ .hero-content h2{
+    font-weight: 300;
+    font-size: 0.9rem;
+ }
+
+ .hero-content svg{
+    /* height: 20px; */
+    opacity: 1;
+    width: 15px;
+ }
+
+ .hero-content .line{
+    width: 100%;
+    height: 1.5px;
+    background-color: black;
+ }
+  
+ .hero-img-box{
+    position: relative;
+    margin-top: 4%;
+    width: 100%;
+    height: 100%;
+ }
+
+ .hero-img{
+    background: url('/assets/smooth-wave-pattern-multi-colored-abstract-design-generated-by-ai.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    border-radius:50px 50px 0 0 ;
+ }
+
+ .hero-img-box .arrow{
+    background-color: black;
+    position: absolute;
+    right: 10%;
+    top: -10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    border: 10px solid rgb(23, 23, 23);
+ }
+
+ .hero-img-box .arrow:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+ }
+
+ .hero-img-box svg{
+    width: 45%;
+    transform: rotate(45deg);
+ }
+ /* Media-queries */
+ @media screen and (max-width:876px) {
+    .nav-links{
+        display: none;
+    }
+
+    .hero{
+        padding-bottom: 0;
+        /* position: relative; */
+    }
+
+    .hero-wrapper{
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .hero .hero-wrapper-left h1{
+        font-size: 17vw;
+        letter-spacing: normal;
+        line-height: 18vw;
+    }
+
+    .hero-wrapper-right {
+        gap: 2px;
+    }
+
+    .hero-wrapper-right .right-img{
+        width: 45vw;
+        height: 9vw;
+        margin-top: 15px;
+    }
+
+    .hero-wrapper-right p{
+        margin-top: 2%;
+        /* width: ; */
+        font-size: 2vw;
+    }
+
+    .hero-content-box h2{
+        font-size: 0.5rem;
+    }
+
+    .hero-img{
+        height: 300px;
+        display: none;
+    }
+
+    .hero-img-box .arrow{
+        top: -10%;
+        height: 15vw;
+        width: 15vw;
+    }
  }
 
 
