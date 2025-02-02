@@ -196,7 +196,7 @@ body{
     border: 10px solid rgb(23, 23, 23);
  }
 
- .hero-img-box .arrow:hover{
+ .hero-img-box .arrow:hover .arrow {
     transform: scale(1.1);
     transition: all 0.5s  ease-in-out ;
  }
@@ -407,7 +407,7 @@ body{
     top: 0;
     left: 0;
     z-index: 2;
-    width: 100vw;
+    width: 100%;
     display:none;
     justify-content: center;
     height: 100vh;
@@ -417,13 +417,15 @@ body{
 
   .hidebar a{
     text-decoration: none;
-    color: #414141
+    color: #414141;
+    font-size: 3.5rem;
   }
 
   .hidebar a:hover{
     text-decoration: dotted;
-    transform: scale(1.05);
+    transform: scale(1.03);
     color: #CCFE38;
+
   }
 
   .hidebar svg{
@@ -580,6 +582,10 @@ body{
     .menubar{
         display: flex;
         align-items: center;
+    }
+
+    .marquee{
+      width: 100%;
     }
     
  }

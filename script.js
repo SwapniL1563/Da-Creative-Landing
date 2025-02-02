@@ -64,7 +64,7 @@ gsap.from(['.hero-content-box'],2,{
 })
 
 gsap.from(['.hero-img'],2,{
-    width:"0px",
+    width:0,
     opacity:0,
     delay:3,
     ease:"power4.inOut",
