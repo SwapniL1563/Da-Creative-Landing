@@ -1,4 +1,11 @@
-gsap.from(['.navbar h1','.nav-links a '],2,{
+const menu = document.querySelector(".menubar");
+const menuItems = document.querySelector(".hidebar")
+menu.addEventListener("click" , function () {
+    menuItems.classList.toggle("show");
+    console.log("hi")
+})
+
+gsap.from(['.navbar h1','.nav-links a ','.menubar'],2,{
     top:"30px",
     opacity:0,
     delay:1,
