@@ -50,7 +50,7 @@ gsap.from(['.line'],2,{
     ease:"power3.inOut",
 })
 
-gsap.from(['.arrow'],2,{
+gsap.from(['.arrow'],{
     scaleY:0,
     delay:1,
     ease:"power4.inOut",
